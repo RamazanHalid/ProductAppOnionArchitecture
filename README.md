@@ -6,21 +6,16 @@ The Onion architecture, introduced by Jeffrey Palermo, offers to solve the probl
 <img src="https://miro.medium.com/max/924/1*0Pg6_UsaKiiEqUV3kf2HXg.png"/>
 </br>
 ### Domain
-</br>
 The domain, that is, the property layer, contains the entities to be used in the whole structure. (eg Products, Categories, Shippers etc..) we should be able to access this layer from within a core layer. In the kernel, we see that there is the Application layer.
 
 ### Application
-</br>
-In the application layer, there are contracts for transactions such as querying, adding, deleting the entities in the Domain layer (Interface).
+ In the application layer, there are contracts for transactions such as querying, adding, deleting the entities in the Domain layer (Interface).
 
 ### Infrastructor
-</br>
-It is used as the infrastructure layer. In this layer, there are objects such as Database objects, dependency injection.
+ It is used as the infrastructure layer. In this layer, there are objects such as Database objects, dependency injection.
 
 ### Persistence
-</br>
-We see that it is a part of the infrastructure layer. It communicates with the infrastructure layer to which it is connected by creating a DbContext (Database object) in the Persistance layer.
+ We see that it is a part of the infrastructure layer. It communicates with the infrastructure layer to which it is connected by creating a DbContext (Database object) in the Persistance layer.
 
 ### Presentation
-</br>
-This area, which is the presentation layer, contains the platform on which the project will be presented. For example Web, Api, Console etc…
+ This area, which is the presentation layer, contains the platform on which the project will be presented. For example Web, Api, Console etc…
