@@ -5,7 +5,7 @@ The Onion architecture, introduced by Jeffrey Palermo, offers to solve the probl
 </br>
 <img src="https://miro.medium.com/max/924/1*0Pg6_UsaKiiEqUV3kf2HXg.png"/>
 </br>
-<h2> Domain </h2>
+<h3> Domain </h3>
 The domain, that is, the property layer, contains the entities to be used in the whole structure. (eg Products, Categories, Shippers etc..) we should be able to access this layer from within a core layer. In the kernel, we see that there is the Application layer.
 
 ### Application
