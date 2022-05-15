@@ -19,3 +19,20 @@ The domain, that is, the property layer, contains the entities to be used in the
 
 ### Presentation
  This area, which is the presentation layer, contains the platform on which the project will be presented. For example Web, Api, Console etc…
+
+## CQRS 
+As you know, requests from the user on an application are of two types. The incoming request either manipulates/modifies existing data or creates a nonexistent data, or allows it to be read directly without any action on the existing data. So long story short, the incoming request either does a read-only operation or does other operations. The requests that will perform the read operation from these operations are called Query, and the others are called Command.
+
+### Command
+These are requests that create non-existent data or update or delete existing data.
+</br>
+
+
+INSERT UPDATE DELETE
+### Query
+These are requests that perform a read operation just to list, read, or present the available data.
+</br>
+SELECT
+
+## Mediatr
+Mediator is a design pattern that allows you to manage the complex web of relationships between various objects within a single mediator object.
